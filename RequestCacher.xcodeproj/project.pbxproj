@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B5A2B321760650C00D05740 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5A2B301760650C00D05740 /* MainStoryboard.storyboard */; };
+		6B5A2B3A1760655000D05740 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B5A2B381760655000D05740 /* InfoPlist.strings */; };
+		6BD64E91176069B90034D990 /* CacheModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B4D176065C300D05740 /* CacheModel.xcdatamodeld */; };
+		6BD64E9217606A4C0034D990 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B2E176064E600D05740 /* AppDelegate.m */; };
+		6BD64E9317606A4C0034D990 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B361760652E00D05740 /* main.m */; };
+		6BD64E9417606A4C0034D990 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B3C1760655E00D05740 /* PhotoCell.m */; };
+		6BD64E9517606A4C0034D990 /* PhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B3E1760655E00D05740 /* PhotoTableViewController.m */; };
+		6BD64E9617606A4C0034D990 /* CachedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B401760656C00D05740 /* CachedObject.m */; };
+		6BD64E9717606A4C0034D990 /* CachedObject+Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B421760656C00D05740 /* CachedObject+Logic.m */; };
+		6BD64E9817606A4C0034D990 /* CDObjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B441760658000D05740 /* CDObjectStore.m */; };
+		6BD64E9917606A4C0034D990 /* NSDecodingFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B461760658000D05740 /* NSDecodingFetchedResultsController.m */; };
+		6BD64E9A17606A4C0034D990 /* HostReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B481760659700D05740 /* HostReachability.m */; };
+		6BD64E9B17606A4C0034D990 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B4A1760659700D05740 /* Reachability.m */; };
+		6BD64E9C17606A4C0034D990 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B4C176065A300D05740 /* AsyncImageView.m */; };
+		6BD64E9D17606A4C0034D990 /* FileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B51176065D900D05740 /* FileStore.m */; };
+		6BD64E9E17606A4C0034D990 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B53176065E200D05740 /* CoreDataStack.m */; };
+		6BD64E9F17606A4C0034D990 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B55176065F600D05740 /* Request.m */; };
+		6BD64EA017606A4C0034D990 /* Request+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B57176065F600D05740 /* Request+Cache.m */; };
+		6BD64EA117606A4C0034D990 /* RequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B591760660300D05740 /* RequestBuilder.m */; };
+		6BD64EA217606A4C0034D990 /* RequestConductor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B5B1760660300D05740 /* RequestConductor.m */; };
+		6BD64EA317606A4C0034D990 /* ResponseCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A2B5D1760660300D05740 /* ResponseCart.m */; };
+		6BD64EA517606DD50034D990 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD64EA417606DD50034D990 /* Default-568h@2x.png */; };
+		6BEB104617008B770023CC19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEB104517008B770023CC19 /* QuartzCore.framework */; };
+		6E03DDA5169B1067000B1A75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E03DDA4169B1067000B1A75 /* UIKit.framework */; };
+		6E03DDA7169B1067000B1A75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E03DDA6169B1067000B1A75 /* Foundation.framework */; };
+		6E03DDA9169B1067000B1A75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E03DDA8169B1067000B1A75 /* CoreGraphics.framework */; };
+		6E03DDCB169B10D4000B1A75 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E03DDCA169B10D4000B1A75 /* CoreData.framework */; };
+		6E72794416D6B8D300D13ABF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E72793916D6B84300D13ABF /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B5A2B2D176064E600D05740 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RequestCacher/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B2E176064E600D05740 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RequestCacher/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B2F176064E600D05740 /* RequestCacher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RequestCacher-Info.plist"; path = "RequestCacher/RequestCacher-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6B5A2B311760650C00D05740 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = RequestCacher/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		6B5A2B331760652E00D05740 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "RequestCacher/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		6B5A2B341760652E00D05740 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = RequestCacher/Default.png; sourceTree = SOURCE_ROOT; };
+		6B5A2B351760652E00D05740 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "RequestCacher/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		6B5A2B361760652E00D05740 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RequestCacher/main.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B371760652E00D05740 /* RequestCacher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RequestCacher-Prefix.pch"; path = "RequestCacher/RequestCacher-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		6B5A2B391760655000D05740 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = RequestCacher/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		6B5A2B3B1760655E00D05740 /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhotoCell.h; path = RequestCacher/PhotoCell.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B3C1760655E00D05740 /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PhotoCell.m; path = RequestCacher/PhotoCell.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B3D1760655E00D05740 /* PhotoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhotoTableViewController.h; path = RequestCacher/PhotoTableViewController.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B3E1760655E00D05740 /* PhotoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PhotoTableViewController.m; path = RequestCacher/PhotoTableViewController.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B3F1760656C00D05740 /* CachedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CachedObject.h; path = RequestCacher/CachedObject.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B401760656C00D05740 /* CachedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CachedObject.m; path = RequestCacher/CachedObject.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B411760656C00D05740 /* CachedObject+Logic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CachedObject+Logic.h"; path = "RequestCacher/CachedObject+Logic.h"; sourceTree = SOURCE_ROOT; };
+		6B5A2B421760656C00D05740 /* CachedObject+Logic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CachedObject+Logic.m"; path = "RequestCacher/CachedObject+Logic.m"; sourceTree = SOURCE_ROOT; };
+		6B5A2B431760658000D05740 /* CDObjectStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDObjectStore.h; path = RequestCacher/CDObjectStore.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B441760658000D05740 /* CDObjectStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CDObjectStore.m; path = RequestCacher/CDObjectStore.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B451760658000D05740 /* NSDecodingFetchedResultsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NSDecodingFetchedResultsController.h; path = RequestCacher/NSDecodingFetchedResultsController.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B461760658000D05740 /* NSDecodingFetchedResultsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NSDecodingFetchedResultsController.m; path = RequestCacher/NSDecodingFetchedResultsController.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B471760659700D05740 /* HostReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HostReachability.h; path = RequestCacher/HostReachability.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B481760659700D05740 /* HostReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HostReachability.m; path = RequestCacher/HostReachability.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B491760659700D05740 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = RequestCacher/Reachability.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B4A1760659700D05740 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = RequestCacher/Reachability.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B4B176065A300D05740 /* AsyncImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = RequestCacher/AsyncImageView.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B4C176065A300D05740 /* AsyncImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = RequestCacher/AsyncImageView.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B4E176065C300D05740 /* CacheModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CacheModel.xcdatamodel; sourceTree = "<group>"; };
+		6B5A2B50176065D900D05740 /* FileStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileStore.h; path = RequestCacher/FileStore.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B51176065D900D05740 /* FileStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FileStore.m; path = RequestCacher/FileStore.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B52176065E200D05740 /* CoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CoreDataStack.h; path = RequestCacher/CoreDataStack.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B53176065E200D05740 /* CoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CoreDataStack.m; path = RequestCacher/CoreDataStack.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B54176065F600D05740 /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Request.h; path = RequestCacher/Request.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B55176065F600D05740 /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Request.m; path = RequestCacher/Request.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B56176065F600D05740 /* Request+Cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Request+Cache.h"; path = "RequestCacher/Request+Cache.h"; sourceTree = SOURCE_ROOT; };
+		6B5A2B57176065F600D05740 /* Request+Cache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Request+Cache.m"; path = "RequestCacher/Request+Cache.m"; sourceTree = SOURCE_ROOT; };
+		6B5A2B581760660300D05740 /* RequestBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RequestBuilder.h; path = RequestCacher/RequestBuilder.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B591760660300D05740 /* RequestBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RequestBuilder.m; path = RequestCacher/RequestBuilder.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B5A1760660300D05740 /* RequestConductor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RequestConductor.h; path = RequestCacher/RequestConductor.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B5B1760660300D05740 /* RequestConductor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RequestConductor.m; path = RequestCacher/RequestConductor.m; sourceTree = SOURCE_ROOT; };
+		6B5A2B5C1760660300D05740 /* ResponseCart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ResponseCart.h; path = RequestCacher/ResponseCart.h; sourceTree = SOURCE_ROOT; };
+		6B5A2B5D1760660300D05740 /* ResponseCart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ResponseCart.m; path = RequestCacher/ResponseCart.m; sourceTree = SOURCE_ROOT; };
+		6BD64EA417606DD50034D990 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6BEB104517008B770023CC19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6E03DDA0169B1067000B1A75 /* RequestCacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RequestCacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E03DDA4169B1067000B1A75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E03DDA6169B1067000B1A75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E03DDA8169B1067000B1A75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E03DDCA169B10D4000B1A75 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6E72793916D6B84300D13ABF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E03DD9D169B1067000B1A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEB104617008B770023CC19 /* QuartzCore.framework in Frameworks */,
+				6E72794416D6B8D300D13ABF /* SystemConfiguration.framework in Frameworks */,
+				6E03DDCB169B10D4000B1A75 /* CoreData.framework in Frameworks */,
+				6E03DDA5169B1067000B1A75 /* UIKit.framework in Frameworks */,
+				6E03DDA7169B1067000B1A75 /* Foundation.framework in Frameworks */,
+				6E03DDA9169B1067000B1A75 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B4C53EF16D64F2A00642833 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B471760659700D05740 /* HostReachability.h */,
+				6B5A2B481760659700D05740 /* HostReachability.m */,
+				6B5A2B491760659700D05740 /* Reachability.h */,
+				6B5A2B4A1760659700D05740 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		6B5CF10D16F1BDED002534D4 /* PhotoCacherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B3B1760655E00D05740 /* PhotoCell.h */,
+				6B5A2B3C1760655E00D05740 /* PhotoCell.m */,
+				6B5A2B3D1760655E00D05740 /* PhotoTableViewController.h */,
+				6B5A2B3E1760655E00D05740 /* PhotoTableViewController.m */,
+			);
+			name = PhotoCacherDemo;
+			sourceTree = "<group>";
+		};
+		6BEE3C7D16EDCC25003FACDC /* ObjectCache */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE3C7E16EDCC33003FACDC /* ManagedObjects */,
+				6B5A2B431760658000D05740 /* CDObjectStore.h */,
+				6B5A2B441760658000D05740 /* CDObjectStore.m */,
+				6B5A2B451760658000D05740 /* NSDecodingFetchedResultsController.h */,
+				6B5A2B461760658000D05740 /* NSDecodingFetchedResultsController.m */,
+			);
+			name = ObjectCache;
+			sourceTree = "<group>";
+		};
+		6BEE3C7E16EDCC33003FACDC /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B3F1760656C00D05740 /* CachedObject.h */,
+				6B5A2B401760656C00D05740 /* CachedObject.m */,
+				6B5A2B411760656C00D05740 /* CachedObject+Logic.h */,
+				6B5A2B421760656C00D05740 /* CachedObject+Logic.m */,
+			);
+			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		6E025F23169D53B9003715C4 /* CacheModule */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE3C7D16EDCC25003FACDC /* ObjectCache */,
+				6B4C53EF16D64F2A00642833 /* Reachability */,
+				6EEBA6C816B66A1E002606A2 /* UIControls */,
+				6EEBA6D216B66C25002606A2 /* CoreDataModel */,
+				6EEBA6CA16B66ABA002606A2 /* DataStores */,
+				6EEBA6CB16B66AD9002606A2 /* RequestCache */,
+			);
+			name = CacheModule;
+			sourceTree = "<group>";
+		};
+		6E03DD95169B1067000B1A75 = {
+			isa = PBXGroup;
+			children = (
+				6BD64EA417606DD50034D990 /* Default-568h@2x.png */,
+				6E03DDAB169B1067000B1A75 /* Supporting Files */,
+				6E03DDAA169B1067000B1A75 /* RequestCacher */,
+				6E03DDA3169B1067000B1A75 /* Frameworks */,
+				6E03DDA1169B1067000B1A75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E03DDA1169B1067000B1A75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E03DDA0169B1067000B1A75 /* RequestCacher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E03DDA3169B1067000B1A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BEB104517008B770023CC19 /* QuartzCore.framework */,
+				6E72793916D6B84300D13ABF /* SystemConfiguration.framework */,
+				6E03DDCA169B10D4000B1A75 /* CoreData.framework */,
+				6E03DDA4169B1067000B1A75 /* UIKit.framework */,
+				6E03DDA6169B1067000B1A75 /* Foundation.framework */,
+				6E03DDA8169B1067000B1A75 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E03DDAA169B1067000B1A75 /* RequestCacher */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B301760650C00D05740 /* MainStoryboard.storyboard */,
+				6B5CF10D16F1BDED002534D4 /* PhotoCacherDemo */,
+				6E025F23169D53B9003715C4 /* CacheModule */,
+			);
+			name = RequestCacher;
+			path = PhotoCacher;
+			sourceTree = "<group>";
+		};
+		6E03DDAB169B1067000B1A75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B2D176064E600D05740 /* AppDelegate.h */,
+				6B5A2B2E176064E600D05740 /* AppDelegate.m */,
+				6B5A2B2F176064E600D05740 /* RequestCacher-Info.plist */,
+				6B5A2B331760652E00D05740 /* Default-568h@2x.png */,
+				6B5A2B341760652E00D05740 /* Default.png */,
+				6B5A2B351760652E00D05740 /* Default@2x.png */,
+				6B5A2B361760652E00D05740 /* main.m */,
+				6B5A2B371760652E00D05740 /* RequestCacher-Prefix.pch */,
+				6B5A2B381760655000D05740 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			path = PhotoCacher;
+			sourceTree = "<group>";
+		};
+		6EEBA6C816B66A1E002606A2 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B4B176065A300D05740 /* AsyncImageView.h */,
+				6B5A2B4C176065A300D05740 /* AsyncImageView.m */,
+			);
+			name = UIControls;
+			sourceTree = "<group>";
+		};
+		6EEBA6CA16B66ABA002606A2 /* DataStores */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B50176065D900D05740 /* FileStore.h */,
+				6B5A2B51176065D900D05740 /* FileStore.m */,
+				6B5A2B52176065E200D05740 /* CoreDataStack.h */,
+				6B5A2B53176065E200D05740 /* CoreDataStack.m */,
+			);
+			name = DataStores;
+			sourceTree = "<group>";
+		};
+		6EEBA6CB16B66AD9002606A2 /* RequestCache */ = {
+			isa = PBXGroup;
+			children = (
+				6EF5D78A16BAA89500501100 /* ManagedObjects */,
+				6B5A2B581760660300D05740 /* RequestBuilder.h */,
+				6B5A2B591760660300D05740 /* RequestBuilder.m */,
+				6B5A2B5A1760660300D05740 /* RequestConductor.h */,
+				6B5A2B5B1760660300D05740 /* RequestConductor.m */,
+				6B5A2B5C1760660300D05740 /* ResponseCart.h */,
+				6B5A2B5D1760660300D05740 /* ResponseCart.m */,
+			);
+			name = RequestCache;
+			sourceTree = "<group>";
+		};
+		6EEBA6D216B66C25002606A2 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B4D176065C300D05740 /* CacheModel.xcdatamodeld */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		6EF5D78A16BAA89500501100 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A2B54176065F600D05740 /* Request.h */,
+				6B5A2B55176065F600D05740 /* Request.m */,
+				6B5A2B56176065F600D05740 /* Request+Cache.h */,
+				6B5A2B57176065F600D05740 /* Request+Cache.m */,
+			);
+			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E03DD9F169B1067000B1A75 /* RequestCacher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E03DDC4169B1067000B1A75 /* Build configuration list for PBXNativeTarget "RequestCacher" */;
+			buildPhases = (
+				6E03DD9C169B1067000B1A75 /* Sources */,
+				6E03DD9D169B1067000B1A75 /* Frameworks */,
+				6E03DD9E169B1067000B1A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RequestCacher;
+			productName = PhotoCacher;
+			productReference = 6E03DDA0169B1067000B1A75 /* RequestCacher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E03DD97169B1067000B1A75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Alin Gorgan";
+			};
+			buildConfigurationList = 6E03DD9A169B1067000B1A75 /* Build configuration list for PBXProject "RequestCacher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E03DD95169B1067000B1A75;
+			productRefGroup = 6E03DDA1169B1067000B1A75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E03DD9F169B1067000B1A75 /* RequestCacher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E03DD9E169B1067000B1A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B5A2B321760650C00D05740 /* MainStoryboard.storyboard in Resources */,
+				6B5A2B3A1760655000D05740 /* InfoPlist.strings in Resources */,
+				6BD64EA517606DD50034D990 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E03DD9C169B1067000B1A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD64E9217606A4C0034D990 /* AppDelegate.m in Sources */,
+				6BD64E9317606A4C0034D990 /* main.m in Sources */,
+				6BD64E9417606A4C0034D990 /* PhotoCell.m in Sources */,
+				6BD64E9517606A4C0034D990 /* PhotoTableViewController.m in Sources */,
+				6BD64E9617606A4C0034D990 /* CachedObject.m in Sources */,
+				6BD64E9717606A4C0034D990 /* CachedObject+Logic.m in Sources */,
+				6BD64E9817606A4C0034D990 /* CDObjectStore.m in Sources */,
+				6BD64E9917606A4C0034D990 /* NSDecodingFetchedResultsController.m in Sources */,
+				6BD64E9A17606A4C0034D990 /* HostReachability.m in Sources */,
+				6BD64E9B17606A4C0034D990 /* Reachability.m in Sources */,
+				6BD64E9C17606A4C0034D990 /* AsyncImageView.m in Sources */,
+				6BD64E9D17606A4C0034D990 /* FileStore.m in Sources */,
+				6BD64E9E17606A4C0034D990 /* CoreDataStack.m in Sources */,
+				6BD64E9F17606A4C0034D990 /* Request.m in Sources */,
+				6BD64EA017606A4C0034D990 /* Request+Cache.m in Sources */,
+				6BD64EA117606A4C0034D990 /* RequestBuilder.m in Sources */,
+				6BD64EA217606A4C0034D990 /* RequestConductor.m in Sources */,
+				6BD64EA317606A4C0034D990 /* ResponseCart.m in Sources */,
+				6BD64E91176069B90034D990 /* CacheModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B5A2B301760650C00D05740 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B5A2B311760650C00D05740 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		6B5A2B381760655000D05740 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B5A2B391760655000D05740 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E03DDC2169B1067000B1A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "RequestCacher/RequestCacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E03DDC3169B1067000B1A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "RequestCacher/RequestCacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E03DDC5169B1067000B1A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RequestCacher/RequestCacher-Prefix.pch";
+				INFOPLIST_FILE = "RequestCacher/RequestCacher-Info.plist";
+				PRODUCT_NAME = RequestCacher;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E03DDC6169B1067000B1A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RequestCacher/RequestCacher-Prefix.pch";
+				INFOPLIST_FILE = "RequestCacher/RequestCacher-Info.plist";
+				PRODUCT_NAME = RequestCacher;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E03DD9A169B1067000B1A75 /* Build configuration list for PBXProject "RequestCacher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E03DDC2169B1067000B1A75 /* Debug */,
+				6E03DDC3169B1067000B1A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E03DDC4169B1067000B1A75 /* Build configuration list for PBXNativeTarget "RequestCacher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E03DDC5169B1067000B1A75 /* Debug */,
+				6E03DDC6169B1067000B1A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B5A2B4D176065C300D05740 /* CacheModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B5A2B4E176065C300D05740 /* CacheModel.xcdatamodel */,
+			);
+			currentVersion = 6B5A2B4E176065C300D05740 /* CacheModel.xcdatamodel */;
+			name = CacheModel.xcdatamodeld;
+			path = ../RequestCacher/CacheModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6E03DD97169B1067000B1A75 /* Project object */;
+}

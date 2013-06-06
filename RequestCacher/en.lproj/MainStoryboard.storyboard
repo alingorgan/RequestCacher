@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qFU-FU-zLW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Table View Controller - Title-->
+        <scene sceneID="Wi6-nc-Edv">
+            <objects>
+                <tableViewController id="BZn-BD-aGX" customClass="PhotoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="5jq-el-xpe">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhotoCell" rowHeight="80" id="vSs-Lt-YUf" customClass="PhotoCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tj-w6-Z5W" customClass="AsyncImageView">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="56" id="ThC-n5-rvG"/>
+                                                <constraint firstAttribute="width" constant="79" id="Vki-LC-HrJ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="9Tj-w6-Z5W" firstAttribute="centerY" secondItem="vSs-Lt-YUf" secondAttribute="centerY" type="default" id="Mse-Ik-kyI"/>
+                                    <constraint firstItem="9Tj-w6-Z5W" firstAttribute="leading" secondItem="vSs-Lt-YUf" secondAttribute="leading" constant="11" id="Pxf-Hf-wu0"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="9Tj-w6-Z5W" id="53y-JU-cU8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BZn-BD-aGX" id="SEN-DC-Q8I"/>
+                            <outlet property="delegate" destination="BZn-BD-aGX" id="neo-zU-Djk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="YXy-Ne-Dhe">
+                        <barButtonItem key="rightBarButtonItem" title="Clear Cache" id="1hk-gG-vAO">
+                            <connections>
+                                <action selector="clearCacheButtonClicked:" destination="BZn-BD-aGX" id="gwj-9s-Iyj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRd-nl-cvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="-175"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GwO-4z-1cB">
+            <objects>
+                <navigationController id="qFU-FU-zLW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zG8-Mk-PxH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ECw-7g-3aa" kind="relationship" relationship="rootViewController" id="ood-PG-Oqi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gem-8h-qeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="-175"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="72c-lu-ovp">
+            <objects>
+                <viewController id="ECw-7g-3aa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i6g-jO-wUG">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWA-NK-hi3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="TfV-bz-ckW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Photo Cacher">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BZn-BD-aGX" kind="push" identifier="" id="VTd-4T-I0w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWA-NK-hi3" firstAttribute="centerX" secondItem="i6g-jO-wUG" secondAttribute="centerX" type="default" id="CLS-bk-brg"/>
+                            <constraint firstItem="eWA-NK-hi3" firstAttribute="top" secondItem="i6g-jO-wUG" secondAttribute="top" constant="42" id="c09-1h-lhK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nh2-Zz-laZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhu-4W-6ZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168" y="-175"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AsyncImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AsyncImageView.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PhotoCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="AsyncImageView"/>
+            </relationships>
+        </class>
+        <class className="PhotoTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clearCacheButtonClicked:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
