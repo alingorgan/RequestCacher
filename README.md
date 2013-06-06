@@ -1,4 +1,4 @@
-RequestCacher {<img src="https://travis-ci.org/[alingorgan]/[RequestCacher].png" />}[https://travis-ci.org/[alingorgan]/[RequestCacher]]
+RequestCacher [https://travis-ci.org/[alingorgan]/[RequestCacher]]
 ===========
 
 A ready to use data caching module for iOS5+
