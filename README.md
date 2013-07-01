@@ -1,9 +1,9 @@
 RequestCacher [![Build Status](https://travis-ci.org/alingorgan/RequestCacher.png)](https://travis-ci.org/alingorgan/RequestCacher)
 ===========
 
-# Description
+<p>A ready to use data caching module for iOS5+</p>
 
-A ready to use data caching module for iOS5+
+# Description
 
 <p>RequestCacher was built initially for caching image files but I've extended it to handle any type of request responses.
 RequestCacher is an alternative to Apple's native caching system (NSURLCache), but provides a greater level of control on how data is cached and for how long to cache it.
@@ -36,14 +36,19 @@ Practically a no brainer set-up (ex: image caching):
 - Give it an url or an array of them
 - Done
 
-<p>Using the custom UIImageView control it's dead simple</p>
-<code>[imageViewControl loadImageWithURL:[NSURL URLWithString:[some_url_string]]];</code>
 
-<p>Do it yourself</p>
-<code>RequestBuilder *requestBuilder = [[RequestBuilder alloc] initWithRequestURL:self.photoURL];
+## Using the custom UIImageView control it's dead simple</p>
+```objective-c
+[imageViewControl loadImageWithURL:[NSURL URLWithString:[some_url_string]]];
+```
+
+
+## Do it yourself
+```objective-c
+RequestBuilder *requestBuilder = [[RequestBuilder alloc] initWithRequestURL:self.photoURL];
     
-    [RequestConductor performRequest:requestBuilder
-                  andCompletionBlock:^void(ResponseCart** responseCart) {
+    [RequestConductor performRequest: requestBuilder
+                  andCompletionBlock: ^void(ResponseCart** responseCart) {
                         
                         ///Still on another thread                   
                         (*responseCart).shouldCache = YES;
@@ -52,7 +57,8 @@ Practically a no brainer set-up (ex: image caching):
                         dispatch_sync(dispatch_get_main_queue(), ^{
                                  ///Update the UI, on the main thread, with the downloaded data
                         });
-   }]; </code>
+   }];
+```
 
 <p>Take advantage of the test project. It's ready to use, so just run it, and see the advantages of RequestCacher.</p>
  
