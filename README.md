@@ -39,7 +39,7 @@ Practically a no brainer set-up (ex: image caching):
 - Done
 
 
-## Using the custom UIImageView control it's dead simple</p>
+## Using the custom UIImageView control is dead simple</p>
 ```objective-c
 [imageViewControl loadImageWithURL:[NSURL URLWithString:[some_url_string]]];
 ```
