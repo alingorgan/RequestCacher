@@ -3,6 +3,8 @@ RequestCacher [![Build Status](https://travis-ci.org/alingorgan/RequestCacher.pn
 
 <p>A ready to use data caching module for iOS5+</p>
 
+![screenshot](https://raw.github.com/alingorgan/RequestCacher/master/requestcacher.png)
+
 # Description
 
 <p>RequestCacher was built initially for caching image files but I've extended it to handle any type of request responses.
