@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PhotoCacher.xcscheme</key>
+		<key>RequestCacher.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6E03DD9F169B1067000B1A75</key>
+		<key>6BF4E2EA1795240D00AA7B7C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

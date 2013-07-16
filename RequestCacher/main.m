@@ -2,8 +2,8 @@
 //  main.m
 //  RequestCacher
 //
-//  Created by Alin Gorgan on 1/7/13.
-//  Copyright (c) 2013 Alin Gorgan. All rights reserved.
+//  Created by Gorgan Alin on 7/16/13.
+//  Copyright (c) 2013 Gorgan Alin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
