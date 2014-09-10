@@ -79,7 +79,7 @@ In detail, RequestCacher integrates the following features:
 - Detects internet connectivity
 
 
-# Contribute
+# Contribute (MIT LICENCE)
 
 This is my contribution to the open source comunity, and feel free to contribute yourself.
 If you just want to use it, go ahead, no strings attached.
